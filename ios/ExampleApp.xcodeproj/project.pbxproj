@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5185F3D41219461192D7681C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F76A630170C348A08108969C /* libPods.a */; };
 		65F64002F95D4BEAA342D303 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F76A630170C348A08108969C /* libPods.a */; };
-		EB735B5F1944FD6800ED7F33 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB735B5E1944FD6800ED7F33 /* Security.framework */; };
 		EB735B621945113E00ED7F33 /* private_p12.p12 in Resources */ = {isa = PBXBuildFile; fileRef = EB735B601945113E00ED7F33 /* private_p12.p12 */; };
 		EB735B631945113E00ED7F33 /* public_certificate.der in Resources */ = {isa = PBXBuildFile; fileRef = EB735B611945113E00ED7F33 /* public_certificate.der */; };
 		EB73940D1943C81D00E4D8A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB73940C1943C81D00E4D8A3 /* Foundation.framework */; };
@@ -65,7 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB735B5F1944FD6800ED7F33 /* Security.framework in Frameworks */,
 				EB73940F1943C81D00E4D8A3 /* CoreGraphics.framework in Frameworks */,
 				EB7394111943C81D00E4D8A3 /* UIKit.framework in Frameworks */,
 				EB73940D1943C81D00E4D8A3 /* Foundation.framework in Frameworks */,

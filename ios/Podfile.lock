@@ -2,13 +2,9 @@ PODS:
   - NSData+Seal (0.9.2)
 
 DEPENDENCIES:
-  - NSData+Seal (from `https://github.com/CodeReaper/NSData-Seal.git`)
-
-EXTERNAL SOURCES:
-  NSData+Seal:
-    :git: https://github.com/CodeReaper/NSData-Seal.git
+  - NSData+Seal (= 0.9.2)
 
 SPEC CHECKSUMS:
-  NSData+Seal: 5fb6d39058f8fa8a31d7c292cd8cae20d21a2422
+  NSData+Seal: af1b5b8d8df174b2132eccb05c23525c4af85ea9
 
 COCOAPODS: 0.33.1

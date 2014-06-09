@@ -10,4 +10,10 @@
 
 @interface CRPayload : NSObject
 
++ (NSData *)seal:(NSString *)string publicKey:(SecKeyRef)publicKey;
++ (NSString *)open:(NSData *)sealed privateKey:(SecKeyRef)privateKey;
+
++ (SecKeyRef)getPublicKeyRefWithCertificateData:(NSData *)certData;
++ (SecKeyRef)getPrivateKeyRefWithP12Data:(NSData *)p12Data andPassword:(NSString *)password;
+
 @end

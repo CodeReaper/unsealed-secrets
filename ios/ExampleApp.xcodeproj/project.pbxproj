@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5185F3D41219461192D7681C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F76A630170C348A08108969C /* libPods.a */; };
+		EB735B5F1944FD6800ED7F33 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB735B5E1944FD6800ED7F33 /* Security.framework */; };
+		EB735B621945113E00ED7F33 /* private_p12.p12 in Resources */ = {isa = PBXBuildFile; fileRef = EB735B601945113E00ED7F33 /* private_p12.p12 */; };
+		EB735B631945113E00ED7F33 /* public_certificate.der in Resources */ = {isa = PBXBuildFile; fileRef = EB735B611945113E00ED7F33 /* public_certificate.der */; };
 		EB73940D1943C81D00E4D8A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB73940C1943C81D00E4D8A3 /* Foundation.framework */; };
 		EB73940F1943C81D00E4D8A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB73940E1943C81D00E4D8A3 /* CoreGraphics.framework */; };
 		EB7394111943C81D00E4D8A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7394101943C81D00E4D8A3 /* UIKit.framework */; };
@@ -20,10 +23,7 @@
 		EB7394281943C81D00E4D8A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7394101943C81D00E4D8A3 /* UIKit.framework */; };
 		EB7394301943C81D00E4D8A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB73942E1943C81D00E4D8A3 /* InfoPlist.strings */; };
 		EB7394321943C81D00E4D8A3 /* ExampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7394311943C81D00E4D8A3 /* ExampleAppTests.m */; };
-		EB73943D1943CA1A00E4D8A3 /* private_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = EB73943B1943CA1A00E4D8A3 /* private_key.pem */; };
-		EB73943E1943CA1A00E4D8A3 /* public_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = EB73943C1943CA1A00E4D8A3 /* public_key.pem */; };
 		EBDE02A11943CDD400DD2F34 /* CRPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDE02A01943CDD400DD2F34 /* CRPayload.m */; };
-		EBDE02A41943CE7D00DD2F34 /* CRPEMKey.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDE02A31943CE7D00DD2F34 /* CRPEMKey.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +38,9 @@
 
 /* Begin PBXFileReference section */
 		6A088A32FC954E21B8985F87 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		EB735B5E1944FD6800ED7F33 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		EB735B601945113E00ED7F33 /* private_p12.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = private_p12.p12; sourceTree = "<group>"; };
+		EB735B611945113E00ED7F33 /* public_certificate.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = public_certificate.der; sourceTree = "<group>"; };
 		EB7394091943C81D00E4D8A3 /* ExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB73940C1943C81D00E4D8A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EB73940E1943C81D00E4D8A3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,12 +57,8 @@
 		EB73942D1943C81D00E4D8A3 /* ExampleAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExampleAppTests-Info.plist"; sourceTree = "<group>"; };
 		EB73942F1943C81D00E4D8A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EB7394311943C81D00E4D8A3 /* ExampleAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleAppTests.m; sourceTree = "<group>"; };
-		EB73943B1943CA1A00E4D8A3 /* private_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = private_key.pem; sourceTree = "<group>"; };
-		EB73943C1943CA1A00E4D8A3 /* public_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = public_key.pem; sourceTree = "<group>"; };
 		EBDE029F1943CDD400DD2F34 /* CRPayload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRPayload.h; sourceTree = "<group>"; };
 		EBDE02A01943CDD400DD2F34 /* CRPayload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRPayload.m; sourceTree = "<group>"; };
-		EBDE02A21943CE7D00DD2F34 /* CRPEMKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRPEMKey.h; sourceTree = "<group>"; };
-		EBDE02A31943CE7D00DD2F34 /* CRPEMKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRPEMKey.m; sourceTree = "<group>"; };
 		F76A630170C348A08108969C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -68,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB735B5F1944FD6800ED7F33 /* Security.framework in Frameworks */,
 				EB73940F1943C81D00E4D8A3 /* CoreGraphics.framework in Frameworks */,
 				EB7394111943C81D00E4D8A3 /* UIKit.framework in Frameworks */,
 				EB73940D1943C81D00E4D8A3 /* Foundation.framework in Frameworks */,
@@ -111,6 +111,7 @@
 		EB73940B1943C81D00E4D8A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EB735B5E1944FD6800ED7F33 /* Security.framework */,
 				EB73940C1943C81D00E4D8A3 /* Foundation.framework */,
 				EB73940E1943C81D00E4D8A3 /* CoreGraphics.framework */,
 				EB7394101943C81D00E4D8A3 /* UIKit.framework */,
@@ -127,9 +128,9 @@
 				EB73941C1943C81D00E4D8A3 /* CRAppDelegate.m */,
 				EBDE029F1943CDD400DD2F34 /* CRPayload.h */,
 				EBDE02A01943CDD400DD2F34 /* CRPayload.m */,
-				EBDE02A21943CE7D00DD2F34 /* CRPEMKey.h */,
-				EBDE02A31943CE7D00DD2F34 /* CRPEMKey.m */,
 				EB73941E1943C81D00E4D8A3 /* Images.xcassets */,
+				EB735B601945113E00ED7F33 /* private_p12.p12 */,
+				EB735B611945113E00ED7F33 /* public_certificate.der */,
 				EB7394131943C81D00E4D8A3 /* Supporting Files */,
 			);
 			path = ExampleApp;
@@ -158,8 +159,6 @@
 		EB73942C1943C81D00E4D8A3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				EB73943B1943CA1A00E4D8A3 /* private_key.pem */,
-				EB73943C1943CA1A00E4D8A3 /* public_key.pem */,
 				EB73942D1943C81D00E4D8A3 /* ExampleAppTests-Info.plist */,
 				EB73942E1943C81D00E4D8A3 /* InfoPlist.strings */,
 			);
@@ -243,8 +242,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB735B621945113E00ED7F33 /* private_p12.p12 in Resources */,
 				EB7394171943C81D00E4D8A3 /* InfoPlist.strings in Resources */,
 				EB73941F1943C81D00E4D8A3 /* Images.xcassets in Resources */,
+				EB735B631945113E00ED7F33 /* public_certificate.der in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,8 +253,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB73943D1943CA1A00E4D8A3 /* private_key.pem in Resources */,
-				EB73943E1943CA1A00E4D8A3 /* public_key.pem in Resources */,
 				EB7394301943C81D00E4D8A3 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,7 +298,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB7394191943C81D00E4D8A3 /* main.m in Sources */,
-				EBDE02A41943CE7D00DD2F34 /* CRPEMKey.m in Sources */,
 				EB73941D1943C81D00E4D8A3 /* CRAppDelegate.m in Sources */,
 				EBDE02A11943CDD400DD2F34 /* CRPayload.m in Sources */,
 			);

@@ -1,10 +1,10 @@
 PODS:
-  - NSData+Base64 (1.0.0)
+  - Base64nl (1.2)
 
 DEPENDENCIES:
-  - NSData+Base64 (= 1.0.0)
+  - Base64nl (= 1.2)
 
 SPEC CHECKSUMS:
-  NSData+Base64: aae92a2e3f0bd88b29fe6093551ded3f5c062548
+  Base64nl: 98b890ea8e2131561ea6aa0f2039ef82c35d47bf
 
 COCOAPODS: 0.33.1

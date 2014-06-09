@@ -1,0 +1,10 @@
+PODS:
+  - NSData+Seal (0.9.2)
+
+DEPENDENCIES:
+  - NSData+Seal (= 0.9.2)
+
+SPEC CHECKSUMS:
+  NSData+Seal: af1b5b8d8df174b2132eccb05c23525c4af85ea9
+
+COCOAPODS: 0.33.1

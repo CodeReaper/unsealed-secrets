@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5185F3D41219461192D7681C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F76A630170C348A08108969C /* libPods.a */; };
+		65F64002F95D4BEAA342D303 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F76A630170C348A08108969C /* libPods.a */; };
 		EB735B5F1944FD6800ED7F33 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB735B5E1944FD6800ED7F33 /* Security.framework */; };
 		EB735B621945113E00ED7F33 /* private_p12.p12 in Resources */ = {isa = PBXBuildFile; fileRef = EB735B601945113E00ED7F33 /* private_p12.p12 */; };
 		EB735B631945113E00ED7F33 /* public_certificate.der in Resources */ = {isa = PBXBuildFile; fileRef = EB735B611945113E00ED7F33 /* public_certificate.der */; };
@@ -23,7 +24,6 @@
 		EB7394281943C81D00E4D8A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7394101943C81D00E4D8A3 /* UIKit.framework */; };
 		EB7394301943C81D00E4D8A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB73942E1943C81D00E4D8A3 /* InfoPlist.strings */; };
 		EB7394321943C81D00E4D8A3 /* ExampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7394311943C81D00E4D8A3 /* ExampleAppTests.m */; };
-		EBDE02A11943CDD400DD2F34 /* CRPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDE02A01943CDD400DD2F34 /* CRPayload.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +57,6 @@
 		EB73942D1943C81D00E4D8A3 /* ExampleAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExampleAppTests-Info.plist"; sourceTree = "<group>"; };
 		EB73942F1943C81D00E4D8A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EB7394311943C81D00E4D8A3 /* ExampleAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleAppTests.m; sourceTree = "<group>"; };
-		EBDE029F1943CDD400DD2F34 /* CRPayload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRPayload.h; sourceTree = "<group>"; };
-		EBDE02A01943CDD400DD2F34 /* CRPayload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRPayload.m; sourceTree = "<group>"; };
 		F76A630170C348A08108969C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -82,6 +80,7 @@
 				EB7394261943C81D00E4D8A3 /* XCTest.framework in Frameworks */,
 				EB7394281943C81D00E4D8A3 /* UIKit.framework in Frameworks */,
 				EB7394271943C81D00E4D8A3 /* Foundation.framework in Frameworks */,
+				65F64002F95D4BEAA342D303 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,8 +125,6 @@
 			children = (
 				EB73941B1943C81D00E4D8A3 /* CRAppDelegate.h */,
 				EB73941C1943C81D00E4D8A3 /* CRAppDelegate.m */,
-				EBDE029F1943CDD400DD2F34 /* CRPayload.h */,
-				EBDE02A01943CDD400DD2F34 /* CRPayload.m */,
 				EB73941E1943C81D00E4D8A3 /* Images.xcassets */,
 				EB735B601945113E00ED7F33 /* private_p12.p12 */,
 				EB735B611945113E00ED7F33 /* public_certificate.der */,
@@ -191,9 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB7394381943C81D00E4D8A3 /* Build configuration list for PBXNativeTarget "ExampleAppTests" */;
 			buildPhases = (
+				BDA7AAC00D044577AE1B59B1 /* Check Pods Manifest.lock */,
 				EB7394201943C81D00E4D8A3 /* Sources */,
 				EB7394211943C81D00E4D8A3 /* Frameworks */,
 				EB7394221943C81D00E4D8A3 /* Resources */,
+				DF0543D1F1CD4C739230553E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -290,6 +289,36 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		BDA7AAC00D044577AE1B59B1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF0543D1F1CD4C739230553E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -299,7 +328,6 @@
 			files = (
 				EB7394191943C81D00E4D8A3 /* main.m in Sources */,
 				EB73941D1943C81D00E4D8A3 /* CRAppDelegate.m in Sources */,
-				EBDE02A11943CDD400DD2F34 /* CRPayload.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +471,7 @@
 		};
 		EB7394391943C81D00E4D8A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A088A32FC954E21B8985F87 /* Pods.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ExampleApp.app/ExampleApp";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -465,6 +494,7 @@
 		};
 		EB73943A1943C81D00E4D8A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A088A32FC954E21B8985F87 /* Pods.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ExampleApp.app/ExampleApp";
 				FRAMEWORK_SEARCH_PATHS = (

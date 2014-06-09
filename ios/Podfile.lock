@@ -1,10 +1,14 @@
 PODS:
-  - Base64nl (1.2)
+  - NSData+Seal (0.9.0)
 
 DEPENDENCIES:
-  - Base64nl (= 1.2)
+  - NSData+Seal (from `https://github.com/CodeReaper/NSData-Seal.git`)
+
+EXTERNAL SOURCES:
+  NSData+Seal:
+    :git: https://github.com/CodeReaper/NSData-Seal.git
 
 SPEC CHECKSUMS:
-  Base64nl: 98b890ea8e2131561ea6aa0f2039ef82c35d47bf
+  NSData+Seal: 44856664f9679fa3fc3748343b7d1a27f11c71dc
 
 COCOAPODS: 0.33.1

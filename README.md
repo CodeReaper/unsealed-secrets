@@ -25,4 +25,11 @@ All examples will take an arbitrary string and convert into a json string with a
 	ruby ruby/decode.rb sealed.json
 
 ## Android
-Run/See the ExampleTest unit test.
+Run/See the ExampleTest unit tests.
+
+## iOS
+Prepare the project by installing pods
+
+	pod install
+
+Open the workspace and run/see the unit tests.

@@ -53,7 +53,7 @@
         return nil;
     }
 
-    NSData *payloadData = [NSData dataWithBytes:buffer length:bufferSize];
+    NSData *payloadData = [NSData dataWithBytes:buffer length:usedBuffer];
     free(buffer);
     NSString *payload = [payloadData base64EncodedString];
 
@@ -82,7 +82,7 @@
     SecKeyDecrypt(privateKey,
                   kSecPaddingPKCS1,
                   tokenData.bytes,
-                  128,
+                  tokenData.length,
                   tokenBytes,
                   &tokenBytesLength);
 
@@ -108,7 +108,7 @@
         return nil;
     }
 
-    NSData *unsealedData = [NSData dataWithBytes:buffer length:bufferSize];
+    NSData *unsealedData = [NSData dataWithBytes:buffer length:usedBuffer];
     free(buffer);
 
     return [[NSString alloc] initWithData:unsealedData encoding:NSUTF8StringEncoding];

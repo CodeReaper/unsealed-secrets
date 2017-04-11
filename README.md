@@ -33,3 +33,8 @@ Prepare the project by installing pods
 	pod install
 
 Open the workspace and run/see the unit tests.
+
+## C# / Mono
+
+	mcs csharp/encode.cs && mono csharp/encode.exe _shared/payload.json sealed.json
+	mcs /reference:System.Web.Extensions.dll csharp/decode.cs && mono csharp/decode.exe sealed.json
